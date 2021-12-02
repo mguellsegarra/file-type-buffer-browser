@@ -1,4 +1,5 @@
-const Buffer = require("buffer").Buffer;
+import { default as B } from "buffer";
+const { Buffer } = B;
 
 import Token from "token-types";
 import * as strtok3 from "strtok3/core";
@@ -10,7 +11,6 @@ import {
 import { extensions, mimeTypes } from "./supported.js";
 
 const minimumBytes = 4100; // A fair amount of file-types are detectable within this range.
-
 
 export async function fileTypeFromBuffer(input) {
   if (!(input instanceof Uint8Array || input instanceof ArrayBuffer)) {
