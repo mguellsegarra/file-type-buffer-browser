@@ -1,0 +1,23 @@
+{
+  "name": "file-type-buffer-browser",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "supported.js",
+    "util.js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "readable-web-to-node-stream": "^3.0.2",
+    "strtok3": "7.0.0-alpha.4",
+    "token-types": "^4.1.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
