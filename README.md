@@ -1,3 +1,3 @@
 # file-type-buffer-browser
 
-Fork of sindresorhus/file-type
+Inspired on [sindresorhus/file-type](https://github.com/sindresorhus/file-type)
