@@ -2,14 +2,13 @@
   "name": "file-type-buffer-browser",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
-  "main": "index.js",
+  "main": "build/index.js",
+  "module": "build/index.esm.js",
   "files": [
-    "index.js",
-    "index.d.ts",
-    "supported.js",
-    "util.js"
+    "build",
+    "src"
   ],
+  "types": "build/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +19,12 @@
     "token-types": "^4.1.1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "rollup": "^2.61.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2"
+  }
 }
